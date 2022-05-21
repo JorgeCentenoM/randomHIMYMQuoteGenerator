@@ -14,7 +14,7 @@ public class WebControllerHIMYM {
     @Autowired
     QuoteService quoteService;
     
-    @RequestMapping("/webHIMYM")
+    @RequestMapping("/")
     public String getRandomQuoteWeb(Model model){
         Quote quote = quoteService.getRandomQuote();
         model.addAttribute("quote", quote);
